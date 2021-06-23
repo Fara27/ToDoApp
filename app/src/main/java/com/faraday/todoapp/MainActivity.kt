@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var passwordInput: EditText
     private lateinit var submitButtonInput: Button
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         userNameInput = findViewById(R.id.userNameInput)
         passwordInput = findViewById(R.id.passwordInput)
         submitButtonInput = findViewById(R.id.submitButton)
+
 
         submitButtonInput.setOnClickListener {
             val username = userNameInput.text.toString()
